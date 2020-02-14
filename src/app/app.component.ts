@@ -10,7 +10,7 @@ import { MeComponent as MeComponent} from './me/me.component';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'angular-erisal';
+  title = 'angular-rwf';
   textShowP: boolean;
   textShowE: boolean;
   constructor(public matDialog: MatDialog) { }
