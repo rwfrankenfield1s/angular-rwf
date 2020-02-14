@@ -331,17 +331,11 @@ h3 span {
   }
 
 
-  /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-  @media screen and (min-width: 601px) {
-    div.mobile {
-    font-size: 80px;
-   }
- }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 300px) {
     div.mobile {
-      font-size: 30px;
+      font-size: 5cm;
   }
 
 </style>
@@ -360,8 +354,8 @@ h3 span {
     </div>
 
 
-      <div align="center" (dblclick) = "hideTextP()"><h3 *ngIf="textShowP" class="div.movile">636-346-9067 <span color=red>double-click to hide</span> </h3></div>
-      <div align="center" (dblclick) = "hideTextE()"><h3 *ngIf="textShowE">rosswf.ms@gmail.com <span color=red>double-click to hide</span> </h3></div>
+      <div align="center" (dblclick) = "hideTextP()"><h3 *ngIf="textShowP" style="font-size: 3vmin;">636-346-9067 <span color=red>double-click to hide</span> </h3></div>
+      <div align="center" (dblclick) = "hideTextE()"><h3 *ngIf="textShowE"style="font-size: 3vmin;">rosswf.ms@gmail.com <span color=red>double-click to hide</span> </h3></div>
 
 
 
