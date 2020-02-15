@@ -58,8 +58,8 @@
   .Mtoolspace {
     margin-right: 35%;
     margin-left: 35%;
-    padding-top: 10%;
-    padding-bottom: 8%;
+    padding-top: 4%;
+    padding-bottom: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -122,8 +122,8 @@
     border-radius: 4px;
     border: 1px solid #eee;
     background-color: #fafafa;
-    height: 40px;
-    width: 200px;
+    height: 100px;
+    width: 220px;
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
@@ -346,8 +346,8 @@ h3 span {
     </div>
 
 
-      <div align="center" (dblclick) = "hideTextP()"><h3 *ngIf="textShowP" style="font-size: 3vmin;">636-346-9067 <span color=red>double-click to hide</span> </h3></div>
-      <div align="center" (dblclick) = "hideTextE()"><h3 *ngIf="textShowE"style="font-size: 3vmin;">rosswf.ms@gmail.com <span color=red>double-click to hide</span> </h3></div>
+      <div align="center" (dblclick) = "hideTextP()"><h3 *ngIf="textShowP" style="font-size: 3vmin;"><a  href="tel:6363469067">636-346-9067 </a><span color=red>double-click to hide</span> </h3></div>
+      <div align="center" (dblclick) = "hideTextE()"><h3 *ngIf="textShowE"style="font-size: 3vmin;"><a href="mailto:rosswf.ms@gmail.com"> rosswf.ms@gmail.com </a><span color=red>double-click to hide</span> </h3></div>
 
 
 
@@ -376,7 +376,7 @@ h3 span {
 <div class="content" role="main">
 
 
-  <h1>Here are a few links to learn about me:</h1>
+  <h3 style='text-align:center'>Here are a few links to learn about me:</h3>
 
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener" id="logout-button" (click)="openModal()">
