@@ -1,0 +1,17 @@
+https://medium.com/@karthiksagar/how-to-deploy-angular-8-app-on-google-cloud-platform-gcp-cdd79e5cc5cf
+
+How to Deploy Angular 8 app on Google Cloud Platform ( GCP )
+
+Step 1 : Upload your project folder and app.yaml file to your bucket.
+
+Step 2 : Sync the data in your bucket to your project
+a) Login to Google cloud console by clicking console icon from top right of the console.
+
+b) create a new directory (just incase but should already be there)
+> mkdir angular-gcp-app
+c) Sync data from bucket to this directory
+> gsutil rsync -r gs://angular-appname-bucket ./angular-gcp-app
+d) Go inside the directory and deploy the gcp
+> cd angular-gcp-app
+> gcloud app deploy 
+Woohoo Done !
